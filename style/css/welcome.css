@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 600px;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+
+}
+
+/* #TODO Page_index.html  */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 140px 150px 150px 50px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+}
+
+.judul {
+    padding-top: 50px;
+}
+
+.judul h6 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.judul p {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+
+.btn-facebook {
+    width: 90%;
+    background-color: #395185;
+    border: none;
+    height: 47px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 2px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    place-self: end center;
+    padding: 12px 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-facebook img {
+    margin-right: 16px;
+}
+
+
+.btn-google {
+    width: 90%;
+    background-color: #ffffff;
+    border-color: black;
+    border: solid 0.25px #7E7E7E;
+    height: 47px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    font-weight: 600;
+    margin: 2px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    place-self: start center;
+    padding: 12px 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-google img {
+    margin-right: 16px;
+}
+
+.btn-circle {
+    place-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.box-2 {
+    background: #FFFFFF;
+    box-shadow: -6px 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px;
+    display: grid;
+    place-items: center;
+}
+
+.footer {
+    place-self: center;
+}
+
+.footer h6 {
+    text-align: center;
+    font-size: 10px;
+    padding: 0px 40px;
+    line-height: 18px;
+}
+
+.footer h6 a {
+    font-weight: 600;
+    text-decoration: none;
+    color: brown;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: brown;
+}
+
+/* #TODO Page_SIgnUP_Phone_Number */
+
+.container-2 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px 50px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+}
+
+.judul-2 {
+    padding-top: 30px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-self: flex-end;
+}
+
+.judul-2 a {
+    padding-left: 10px;
+}
+
+.judul-2 h6 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-1 h6 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #141414;
+    padding: 10px 0px;
+}
+
+.text-1 p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.input_nohp {
+    margin-top: 20px;
+    width: 100%;
+    height: 47px;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 60px 10px 20px auto;
+    grid-template-rows: 1fr;
+    align-self: flex-start;
+    border: 1px solid #7E7E7E;
+    border-radius: 10px;
+
+}
+
+.input_nohp p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 50%;
+}
+
+.line {
+    padding-top: 50%;
+}
+
+.pacholder-2 input {
+    border: 0;
+    padding: 10px 5px;
+    width: auto;
+    font-size: 14px;
+    width: 90%;
+    outline: none;
+}
+
+.btn-SC {
+    width: 100%;
+    background-color: #C4C4C4;
+    border: none;
+    height: 47px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 2px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    place-self: end center;
+    padding: 12px 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* #TODO Verif Code  */
+
+.container-3 {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 80px 1fr auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+    /* margin: 20px; */
+}
+
+.input_nohp-2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 47px;
+    display: grid;
+    gap: 7px;
+    align-self: flex-start;
+    border: 1px solid #7E7E7E;
+    border-radius: 10px;
+
+}
+
+.input_nohp p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 50%;
+}
+
+.pacholder-3 input {
+    border: 0;
+    padding: 10px 20px;
+    width: auto;
+    font-size: 14px;
+    width: 90%;
+    outline: none;
+    margin: 0px 10px;
+}
+
+.footer {
+    place-self: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer a {
+    text-decoration: none;
+    color: brown;
+}
+
+/* #TODO Page Brithday  */
+.judul-3 {
+    padding-top: 30px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    align-self: flex-end;
+}
+
+.judul-3 h6 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.input_nohp-3 {
+    margin-top: 20px;
+    width: 100%;
+    height: 47px;
+    display: grid;
+    gap: 7px;
+    align-self: flex-start;
+
+}
+
+.input_nohp p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 50%;
+}
+
+.pacholder-4 input {
+    border: 0;
+    padding: 10px 20px;
+    width: auto;
+    font-size: 14px;
+    width: 90%;
+    outline: none;
+    margin: 0px 10px;
+    letter-spacing: 0.1em;
+}
+
+.btn-next {
+    width: 100%;
+    background-color: #C4C4C4;
+    border: none;
+    height: 47px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    place-self: end center;
+    padding: 12px 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container-4 {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+}
+
+/* #TODO Create_Password */
+
+.container-5 {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto 80px auto 1fr 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+    /* margin: 20px; */
+}
+
+.input_pass p {
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    outline: none;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #e4e4e4;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: rgb(197, 197, 197);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data img {
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    pointer-events: none;
+}
+
+.input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #ff1212;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+.des_pass_sa {
+    display: flex;
+    align-items: center;
+}
+
+.des_pass_sa p {
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #4A4A4A;
+    margin-top: 14px;
+}
+
+/* #TODO Interest */
+
+.container-int {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 170px auto auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    grid-gap: 20px;
+    /* margin: 20px; */
+}
+
+.judul-int {
+    align-self: flex-start;
+    padding-top: 60px;
+}
+
+.judul-int h6 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.judul-int p {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.pilihan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr auto;
+    place-items: start;
+    grid-column-gap: 18px;
+    grid-row-gap: 25px;
+}
+
+.box-int {
+    background: #FFFFFF;
+    box-shadow: -6px 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 28px;
+    width: 95px;
+    height: 95px;
+    display: flex;
+}
+
+.box-int a {
+    margin: auto;
+}
+
+.box-int a img {
+    width: 75px;
+    height: 75px;
+}
+
+.btn-login-int {
+    width: 100%;
+    background-color: #B82935;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: 14px;
+    place-self: end center;
+    margin: 20px 0px;
+}
