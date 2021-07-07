@@ -11,6 +11,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="../../style/css/welcome.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../style/css/intlTelInput.min.css">
+    <style>
+        .iti-flag {
+            background-image: url("../../img/flags.png");
+        }
+
+        @media (-webkit-min-device-pixel-ration: 2),
+        (min-resolution: 192dpi) {
+            .iti-flag {
+                background-image: url("../../img/flags@2x.png");
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -26,36 +39,24 @@
         <div class="text-1">
             <h6>What’s your phone number?</h6>
         </div>
-        <div class="input_nohp">
-            <div class="dropdown">
-                <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="../../img/bendera.svg" alt="">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
-                </ul>
+        <form class="form-input" action="" name="form" method="post" onsubmit="return validated()">
+            <input type="tel" id="phone" name="phone-number" onkeyup="numberonly()" oninput="berubah()">
+            <div id="input-error">
+                Phone Number Invalid
             </div>
-            <div class="line">
-                <img src="..\..\img\Line 2.svg" alt="">
-            </div>
-            <p>
-                +62
-            </p>
-            <form action="">
-                <div class="pacholder-2">
-                    <input type="text" placeholder="123 456 789">
-                </div>
-            </form>
-        </div>
-        <a href="..\..\page\welcome\verif_code.html" class="btn-SC">
-            Send Code
-        </a>
+            <button type="submit" class="btn-SC" id="summit">
+                Send Code
+            </button>
+        </form>
     </div>
-
-
+    <script src="../../style/js/valid_phone.js"></script>
+    <script src="../../style/js/intlTelInput.min.js"></script>
+    <script>
+        var input = document.querySelector('#phone');
+        var iti = window.intlTelInput(input, {
+            utilsScript: '../../style/js/utils.js'
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>

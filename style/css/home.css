@@ -82,18 +82,21 @@ body {
 }
 
 .foto-profile {
-    align-self: center;
-    clip-path: circle();
+    place-self: center;
+
+
 }
 
 .foto-profile img {
-    width: 50px;
+    width: 40px;
+    clip-path: circle();
 }
 
 .nama-profile {
     display: flex;
     flex-direction: column;
     line-height: 5px;
+    padding: 3px 0px 10px 10px;
 }
 
 .nama-profile h6 {
@@ -116,7 +119,7 @@ body {
 /* #TODO 1. Deskripsi */
 
 .deskripsi-content {
-    margin: 0px 20px 15px 20px;
+    margin: 10px 20px 15px 20px;
     font-weight: 400;
     font-size: 12px;
 }
