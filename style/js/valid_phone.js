@@ -5,7 +5,7 @@ var phone_error = document.getElementById('input-error');
 var btn = document.getElementById('summit');
 
 function validated() {
-    if (phone.value.length < 12) {
+    if (phone.value.length < 10) {
         phone.style.border = "2px solid red";
         phone_error.style.display = "block";
         phone.focus();
