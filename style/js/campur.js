@@ -22,7 +22,10 @@ function toggle() {
 
 function berubah() {
     var x = document.getElementById("password");
+    var y = document.getElementById("username");
     if (x.value != "") {
+        btn.style.background = "#B82935";
+    } else if (y.value != "") {
         btn.style.background = "#B82935";
     } else {
         btn.style.background = "#C4C4C4";
