@@ -197,6 +197,154 @@ body {
     place-self: center end;
 }
 
+#popUp {
+    position: fixed;
+    background-color: rgb(223, 223, 223);
+    width: 600px;
+    height: 566px;
+    bottom: -110%;
+    border-radius: 20px 20px 0px 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 460px 45px;
+    gap: 3px;
+    transition: 1s;
+
+}
+
+#popUp.active {
+    visibility: visible;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    #popUp {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    #popUp {
+        width: 100%;
+    }
+}
+
+.header-comment {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.header-comment p {
+    width: 100%;
+    padding-left: 38%;
+    padding-top: 10px;
+}
+
+.header-comment img {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.all-comment {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: auto;
+}
+
+
+
+.grub-comment {
+    display: flex;
+    padding: 20px 20px 0px 20px;
+
+}
+
+.foto-comment {
+    width: 40px;
+}
+
+.foto-comment img {
+    clip-path: circle();
+    width: 32px;
+    height: 32px;
+}
+
+.isi-comment {
+    padding: 0px 0px 0px 10px;
+    width: 80%;
+
+}
+
+.isi-comment h6 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.isi-comment p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -6px;
+    margin-bottom: -1px;
+}
+
+.isi-comment span {
+    font-weight: 400;
+    font-size: 10px;
+    color: #9F9F9F;
+
+}
+
+.isi-comment span a {
+    text-decoration: none;
+    color: #9F9F9F;
+    margin-left: 10px;
+}
+
+.love-comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    padding-left: 20px;
+}
+
+.love-comment img {
+    width: 17px;
+    padding-left: 3px;
+    padding-bottom: 5px;
+}
+
+.love-comment p {
+    font-weight: 600;
+    font-size: 8px;
+    text-align: center;
+}
+
+.input-comment {
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-content: center;
+    height: auto;
+}
+
+.input-comment input {
+    border: none;
+    background-color: #F7F7F7;
+    outline: none;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.input-comment img {
+    width: 30px;
+    padding-left: 10px;
+}
 
 /* #TODO 2. Home Explore */
 
@@ -205,7 +353,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px auto 60px;
     background-color: rgb(233, 233, 233);
     grid-gap: 5px;
     padding: 0px;
@@ -324,10 +472,26 @@ body {
     color: #1A1A1A;
 }
 
+
+
 .nama-pengguna p {
     font-weight: 400;
     font-size: 14px;
     color: #6F6F6F;
+}
+
+@media (max-width: 320px) {
+    .nama-pengguna h6 {
+        font-size: 12px;
+    }
+
+    .nama-pengguna p {
+        font-size: 12px;
+    }
+
+    .nama-pengguna p img {
+        display: none;
+    }
 }
 
 .folow-3 {
@@ -343,17 +507,25 @@ body {
 }
 
 .content-3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(240, 240, 240);
+
 }
 
+.img-3 {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    break-inside: avoid;
+}
 
 .img-3 img {
     width: 100%;
-    height: 423px;
-    object-fit: cover;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -381,6 +553,21 @@ body {
 
 .comment {
     background-color: white;
+}
+
+.bottom-bar-comment {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    height: 56px;
+    background-color: rgb(219, 31, 31);
+    align-items: center;
+    width: 600px;
+}
+
+.bottom-bar-comment a {
+    padding: 20px 0px 10px 20px;
+    display: flex;
 }
 
 /* #TODO buttom bar */
@@ -541,4 +728,155 @@ body {
 
 .form .grid .form-element div span {
     font-size: 30px;
+}
+
+/* #TODO Notif_Page */
+
+.container-home-2 {
+    width: 100%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto;
+    background-color: rgb(221, 221, 221);
+    grid-gap: 4px;
+    padding: 0px;
+}
+
+.content-notif {
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.grub {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.grub span {
+    padding: 10px 20px 0px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #6F6F6F;
+}
+
+.like {
+    display: flex;
+    justify-content: space-between;
+}
+
+.isi-notif {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+
+}
+
+.isi-notif:hover {
+    color: black;
+}
+
+.f-notif {
+    padding-right: 20px;
+}
+
+.f-notif img {
+    clip-path: circle();
+    width: 45px;
+}
+
+.notif-inf {
+    width: 60%;
+    font-size: 14px;
+}
+
+.notif-inf b {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.notif-inf span {
+    color: rgb(126, 126, 126);
+    margin-left: -15px;
+}
+
+.f-like {
+    width: 80px;
+    display: flex;
+    justify-content: end;
+}
+
+.f-like img {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.notif-folow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-folow {
+    width: 100px;
+}
+
+.btn-folow {
+    overflow: hidden;
+    width: 74px;
+    background-color: #b90f18;
+    border: none;
+    height: 30px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 0px 20px;
+    font-weight: 700;
+    padding: 4px 0px;
+    font-family: 'nunito';
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* #TODO Report_Page */
+
+.content-report {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 20px;
+}
+
+.sub-ket {
+    padding: 20px 0px 0px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #6F6F6F;
+}
+
+.isi-report {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    padding: 0px 29px 10px 20px;
+}
+
+.isi-report:hover {
+    color: black;
+}
+
+.isi-report span {
+
+    font-size: 400;
+    font-size: 16px;
 }
