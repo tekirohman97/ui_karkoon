@@ -529,9 +529,27 @@ input[type="submit"]:focus {
     display: none;
 }
 
-.strong {
-    margin-left: 20px;
-    margin-top: -20px;
+.strength-1 {
+    font-weight: 500;
+    font-size: 12px;
+    color: #9E9E9E;
+}
+
+.strength-1 b {
+    color: #D62632;
+}
+
+.strength {
+    margin: 10px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.strength img {
+    margin-right: 7px;
+}
+
+#success {
     display: none;
 }
 
