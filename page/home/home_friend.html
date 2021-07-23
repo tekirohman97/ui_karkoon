@@ -34,6 +34,9 @@
         </div>
         <!-- #TODO BODY -->
         <div class="content">
+
+            <!-- dibawah ini kontent jika tidak kosong -->
+
             <div class="box">
                 <div class="header-content">
                     <div class="foto-profile">
@@ -85,6 +88,12 @@
                         - Christie Brinkley
                     </h2>
                     <button onclick="toggle(1)" id="more">... more</button>
+                    <a onclick="popup();">
+                        <div class="box-comment-click">
+                            <h6><b>Ervan : </b>Wow 😉 kelihatan kayak malaikat yang turun 😅</h6>
+                            <h6><b>Gabriella Priskilla: </b>Nice. Kakak ku 😎</h6>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="box">
@@ -141,7 +150,22 @@
                 </div>
             </div>
 
+            <!-- dibawah ini displaynya none untuk kontent kosong nya -->
+
+            <div class="content-empty">
+                <h6>
+                    You haven’t followed anyone
+                </h6>
+                <span>
+                    You will see the people you follow here
+                </span>
+            </div>
+
+            <!-- ----------------------------------------------------- -->
         </div>
+
+        <!-- dibawah ini buttom bar -->
+
         <nav class="nav">
             <a href="#" class="nav__link">
                 <img src="../../img/home.svg" alt="">
@@ -163,6 +187,11 @@
                 <span class="nav__text">Settings</span>
             </a>
         </nav>
+
+        <!-- ------------------------------------------------- -->
+
+        <!-- dibawah ini popup kommment -->
+
         <div class="comment-popup" id="popUp">
             <div class="header-comment">
                 <p>
@@ -325,6 +354,9 @@
                 </button>
             </form>>
         </div>
+
+        <!-- ---------------------------------------------------------------- -->
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

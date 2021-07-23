@@ -70,6 +70,25 @@ body {
     background-color: white;
 }
 
+.content-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.content-empty h6 {
+    font-size: 16;
+    font-weight: 700;
+}
+
+.content-empty span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
 /* #TODO 1. Header Content */
 
 .header-content {
@@ -421,6 +440,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    position: relative;
 }
 
 .box-2 img {
@@ -448,6 +468,7 @@ body {
     background-color: rgb(233, 233, 233);
     grid-gap: 5px;
     padding: 0px;
+
 }
 
 .header-3 {
@@ -508,7 +529,12 @@ body {
 }
 
 .folow-3 {
-    align-self: center;
+    place-self: center start;
+    width: 100%;
+}
+
+.folow-3 a {
+    margin-right: 20px;
 }
 
 .folow-3 a img {
@@ -566,6 +592,7 @@ body {
 
 .comment {
     background-color: white;
+    padding-bottom: 56px;
 }
 
 .bottom-bar-comment {
@@ -573,14 +600,41 @@ body {
     display: flex;
     bottom: 0;
     height: 56px;
-    background-color: rgb(219, 31, 31);
     align-items: center;
     width: 600px;
+    background: white;
 }
+
+
+@media (max-width: 575px) {
+    .bottom-bar-comment {
+        width: 100%;
+    }
+}
+
 
 .bottom-bar-comment a {
     padding: 20px 0px 10px 20px;
     display: flex;
+    text-decoration: none;
+    color: black;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.bottom-bar-comment a p {
+    margin-top: 16px;
+}
+
+.write {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.w {
+    margin-right: 20px;
 }
 
 /* #TODO buttom bar */
@@ -925,6 +979,9 @@ body {
 .header-edit-profile button {
     background: none;
     border: none;
+    color: #B92835;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .content-edit-profile {
@@ -934,6 +991,54 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.box-edit-profile-detail {
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-content: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.box-edit-profile-detail input {
+    margin: 40px 20px;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #C2C2C2;
+    outline: none;
+    padding: 10px;
+}
+
+.box-edit-profile-detail img {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    width: 20px;
+}
+
+.box-edit-profile-detail textarea {
+    margin: 40px 20px;
+    width: 90%;
+    height: 100px;
+    border: none;
+    border-bottom: 1px solid #C2C2C2;
+    outline: none;
+    padding: 10px;
+    position: relative;
+}
+
+.box-edit-profile-detail span {
+    position: absolute;
+    right: 30px;
+    top: 115px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #C2C2C2;
+}
+
 
 .box-foto-profile {
     width: 100%;
@@ -1407,14 +1512,10 @@ body {
 
 .scroll {
     display: flex;
-    overflow-x: scroll;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.scroll::-webkit-scrollbar {
-    display: none;
-}
 
 .category-search a {
     text-decoration: none;
@@ -1500,4 +1601,21 @@ body {
 .box-people button {
     position: absolute;
     right: 10px;
+}
+
+.deskripsi-content a {
+    text-decoration: none;
+}
+
+.box-comment-click {
+    border-radius: 4px;
+    background: #F5F6F8;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.box-comment-click h6 {
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
 }

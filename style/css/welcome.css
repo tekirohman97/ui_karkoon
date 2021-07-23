@@ -718,6 +718,20 @@ input[type="submit"]:focus {
     grid-row-gap: 25px;
 }
 
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.checkbox:checked~.pilih {
+    display: block;
+}
+
 .box-int {
     background: #FFFFFF;
     box-shadow: -6px 5px 5px rgba(0, 0, 0, 0.05);
@@ -725,13 +739,22 @@ input[type="submit"]:focus {
     width: 95px;
     height: 95px;
     display: flex;
+    position: relative;
 }
 
-.box-int a {
+.checkbox-img {
     margin: auto;
+    border: 2px solid transparent;
 }
 
-.box-int a img {
+.pilih {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.checkbox-img img {
     width: 75px;
     height: 75px;
 }

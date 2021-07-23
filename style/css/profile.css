@@ -105,6 +105,7 @@ body {
     flex-direction: column;
     background-color: white;
     line-height: 22px;
+    position: relative;
 }
 
 .box-post img {
@@ -196,12 +197,34 @@ body {
     position: relative;
 }
 
+.container-profile-pribadi {
+    background-color: #F8F5F5;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 100px 80px 40px 50px auto;
+    font-family: Montserrat;
+    position: relative;
+}
+
+.btn-kebab {
+    position: absolute;
+    right: 5px;
+    top: 60px;
+}
+
+.btn-kebab img {
+    width: 30px;
+    height: 30px;
+}
+
 .header-profile {
     padding: 23px 29px;
     align-self: center;
     display: flex;
     justify-content: space-between;
     background-color: white;
+    position: relative;
 
 }
 
@@ -292,6 +315,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    padding-top: 15px;
 }
 
 .btn-folow {
@@ -321,4 +345,25 @@ body {
 .folow a {
     margin-top: 2px;
     margin-right: 20px;
+}
+
+.love-content {
+    position: absolute;
+    right: 0px;
+    top: 165px;
+    display: flex;
+    align-items: center;
+}
+
+.love-content img {
+    width: 24px;
+    height: 24px;
+}
+
+.love-content p {
+    margin-left: -5px;
+    margin-top: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
 }
