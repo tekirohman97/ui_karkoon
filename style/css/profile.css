@@ -192,7 +192,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 60px 100px 80px 40px 50px auto;
+    grid-template-rows: 60px 100px auto 40px 50px auto;
     font-family: Montserrat;
     position: relative;
 }
@@ -274,7 +274,7 @@ body {
 
 .des-profile {
     padding: 0px 20px;
-    background-color: white;
+    background: white;
     align-self: flex-start;
 }
 
@@ -407,6 +407,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    background: white;
 }
 
 .btn-folow {
@@ -466,6 +467,11 @@ body {
     margin-top: 2px;
     margin-right: 20px;
     display: none;
+}
+
+.btn-msg {
+    margin-top: 2px;
+    margin-right: 20px;
 }
 
 .love-content {
