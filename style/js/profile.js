@@ -1,6 +1,10 @@
 let tabHeader = document.getElementsByClassName("tab-header")[0];
 let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
 let tabBody = document.getElementsByClassName("tab-body")[0];
+let sgt = document.getElementById('sugest');
+let btn_down = document.getElementById('btn-down');
+let btn_up = document.getElementById('btn-up');
+
 
 let tabsPane = tabHeader.getElementsByTagName("div");
 
@@ -13,4 +17,17 @@ for (let i = 0; i < tabsPane.length; i++) {
 
         tabIndicator.style.left = `calc(calc(100% / 2) * ${i})`;
     });
+}
+
+btn_down.onclick = function () {
+    sgt.style.display = 'block'
+    btn_down.style.display = 'none'
+    btn_up.style.display = 'block'
+
+}
+btn_up.onclick = function () {
+    sgt.style.display = 'none'
+    btn_down.style.display = 'block'
+    btn_up.style.display = 'none'
+
 }
