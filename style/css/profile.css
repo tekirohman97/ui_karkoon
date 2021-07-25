@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-color: rgb(233, 233, 233);
     font-family: 'Montserrat''Nunito', sans-serif;
     margin: auto;
+    color: #0A0A0A;
 
 }
 
@@ -123,10 +125,12 @@ body {
 }
 
 #product {
-    margin-top: -8px;
-    height: 76px;
-    width: 100%;
-    background-color: white;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10px;
+    gap: 10px;
+    height: auto;
 }
 
 .box-product {
@@ -492,5 +496,188 @@ body {
     margin-top: 8px;
     color: white;
     font-weight: 600;
+    font-size: 14px;
+}
+
+/* #TODO Page Setting and privacy */
+
+.container-set-priv {
+    width: 100%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px auto;
+    background-color: #F8F5F5;
+    grid-gap: 4px;
+    padding: 0px;
+}
+
+.header-set-priv {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-gap: 20px;
+    padding-top: 24px;
+    justify-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.header-set-priv a img {
+    width: 24px;
+}
+
+.header-set-priv h6 {
+    font-weight: 700;
+    font-size: 20px;
+    justify-self: start;
+    margin-left: 10px;
+}
+
+
+.content-report {
+    display: flex;
+    flex-direction: column;
+    background: #F8F5F5;
+    gap: 5px;
+}
+
+.sub-ket {
+    padding: 20px 0px 0px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #6F6F6F;
+}
+
+.box-list-set {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background: white;
+}
+
+.box-list-set .isi-report {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px 0px 20px;
+}
+
+.isi-report span {
+
+    font-size: 400;
+    font-size: 16px;
+}
+
+.link-karkoon {
+    display: flex;
+}
+
+.link-karkoon img {
+    margin-right: 10px;
+}
+
+.link-karkoon span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.logout {
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0A0A0A;
+
+}
+
+.content-set-priv {
+    background: white;
+    margin-top: -5px;
+    height: 100vh;
+}
+
+.box-p-karkoon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 84px;
+    padding: 0px 32px;
+}
+
+.box-p-karkoon img {
+    width: 136px;
+    height: 136px;
+}
+
+.box-p-karkoon span {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.box-p-karkoon p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.box-s-k {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.box-s-k img {
+    width: 41px;
+    height: 41px;
+}
+
+.ket {
+    margin-left: 15px;
+}
+
+.ket span {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.ket p {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* #TODO Page manage account */
+
+.judul-m-a {
+    font-weight: 600;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 35px;
+}
+
+.content-m-a {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.content-m-a h6 {
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #757575;
+}
+
+.content-m-a span {
+    font-size: 400;
     font-size: 14px;
 }

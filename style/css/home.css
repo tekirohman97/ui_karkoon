@@ -184,8 +184,9 @@ body {
 .img-content img {
     width: 100%;
     height: auto;
+    max-height: 600px;
     position: relative;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -474,7 +475,7 @@ body {
 .header-3 {
     height: 90px;
     display: grid;
-    grid-template-columns: 30px 40px auto 60px 30px;
+    grid-template-columns: 30px 40px auto 70px 30px;
     grid-gap: 10px;
     padding-top: 24px;
     background-color: white;
@@ -529,13 +530,12 @@ body {
 }
 
 .folow-3 {
-    place-self: center start;
-    width: 100%;
+    place-self: center end;
+    width: auto;
+
 }
 
-.folow-3 a {
-    margin-right: 20px;
-}
+.folow-3 a {}
 
 .folow-3 a img {
     width: 60px;
@@ -555,15 +555,11 @@ body {
 .img-3 {
     width: 100%;
     height: auto;
-
-    overflow: hidden;
-    break-inside: avoid;
 }
 
 .img-3 img {
     width: 100%;
     height: auto;
-    max-height: 500px;
     object-fit: contain;
     object-position: center;
 }
