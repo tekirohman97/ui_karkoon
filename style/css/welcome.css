@@ -740,12 +740,17 @@ input[type="submit"]:focus {
     height: 95px;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .checkbox-img {
-    margin: auto;
     border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .pilih {
     position: absolute;
@@ -755,8 +760,17 @@ input[type="submit"]:focus {
 }
 
 .checkbox-img img {
-    width: 75px;
-    height: 75px;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.checkbox-img p {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 10px 0px 10px;
+    word-break: break-all;
+    text-align: center;
 }
 
 .btn-login-int {
