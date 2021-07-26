@@ -78,14 +78,18 @@ body {
 .tabs .tab-body>div {
     position: absolute;
     top: 0%;
+    left: -1000%;
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 500ms ease-in-out 0ms,
         transform 500ms ease-in-out 0ms;
+
+
 }
 
 .tabs .tab-body>div.active {
     top: 0px;
+    left: 0%;
     opacity: 1;
     transform: scale(1);
 }
@@ -132,6 +136,7 @@ body {
     gap: 10px;
     height: auto;
 }
+
 
 .box-product {
     display: flex;
@@ -681,3 +686,5 @@ body {
     font-size: 400;
     font-size: 14px;
 }
+
+/* #TODO foto */

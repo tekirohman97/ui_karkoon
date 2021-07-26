@@ -48,9 +48,9 @@
                             Janie BlackPing
                         </h6>
                     </div>
-                    <div class="navigasi">
+                    <a class="navigasi" onclick="popup_kebab()">
                         <img src="..\..\img\navigasii.svg" alt="">
-                    </div>
+                    </a>
                 </div>
                 <div class="img-content">
                     <img src="https://assets.jalantikus.com/assets/cache/0/0/userfiles/2020/09/16/pem8-4416e.jpg"
@@ -58,13 +58,15 @@
                 </div>
                 <div class="footer-content">
                     <a class="share-left" href="">
-                        <img src="..\..\img\love.svg" alt="">
+                        <img src="..\..\img\love.svg" alt="" style="display: none;">
+                        <img src="../../img/loving.svg" alt="">
                         <p>
                             500
                         </p>
                     </a>
                     <a class="share-left" href="">
-                        <img src="..\..\img\start.svg" alt="">
+                        <img src="..\..\img\start.svg" alt="" style="display: none;">
+                        <img src="../../img/starting.svg" alt="">
                         <p>
                             488
                         </p>
@@ -75,7 +77,7 @@
                             67
                         </p>
                     </a>
-                    <a class="share-right" href="">
+                    <a class="share-right" onclick="popup_share()">
                         <img src="..\..\img\share.svg" alt="">
                     </a>
                 </div>
@@ -170,12 +172,12 @@
         <nav class="nav">
             <a href="#" class="nav__link">
                 <img src="../../img/home.svg" alt="">
-                <img src="../../img/home-active.svg" alt="" style="display: none;">
+                <img src="../../img/home_new.svg" alt="" style="display: none;">
                 <span class="nav__text">Dashboard</span>
             </a>
             <a href="#" class="nav__link ">
                 <img src="../../img/shope.svg" alt="">
-                <img src="../../img/shope-active.svg" alt="" style="display: none;">
+                <img src="../../img/shop_new.svg" alt="" style="display: none;">
                 <span class="nav__text">Profile</span>
             </a>
             <a href="#" class="nav__link">
@@ -183,18 +185,19 @@
             </a>
             <a href="#" class="nav__link">
                 <img src="../../img/chat.svg" alt="">
-                <img src="../../img/chat-active.svg" alt="" style="display: none;">
+                <img src="../../img/chat_new.svg" alt="" style="display: none;">
                 <span class="nav__text">Privacy</span>
             </a>
             <a href="#" class="nav__link">
                 <img src="../../img/profile.svg" alt="">
-                <img src="../../img/profile-active.svg" alt="" style="display: none;">
+                <img src="../../img/profile_new.svg" alt="" style="display: none;">
                 <span class="nav__text">Settings</span>
             </a>
         </nav>
 
-        <!-- ------------------------------------------------- -->
-
+        <!-- -------------------------  ------------------------ -->
+        <div class="black-container" id="black">
+        </div>
         <!-- dibawah ini popup kommment -->
 
         <div class="comment-popup" id="popUp">
@@ -359,8 +362,83 @@
                 </button>
             </form>>
         </div>
-
         <!-- ---------------------------------------------------------------- -->
+
+        <div class="popup-share" id="popUpShare">
+            <div class="header-popup-share">
+                <p>
+                    Share to
+                </p>
+                <div class="icon-share-medsos">
+                    <a class="box-icon-share">
+                        <img src="../../img/share/Whatsapp.svg" alt="">
+                        <span>
+                            Whatsapp
+                        </span>
+                    </a>
+                    <a class="box-icon-share">
+                        <img src="../../img/share/Instagram.svg" alt="">
+                        <span>
+                            Instagram
+                        </span>
+                    </a>
+                    <a class="box-icon-share">
+                        <img src="../../img/share/Facebook.svg" alt="">
+                        <span>
+                            Facebook
+                        </span>
+                    </a>
+                    <a class="box-icon-share">
+                        <img src="../../img/share/Copy.svg" alt="">
+                        <span>
+                            Copy link
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="body-popup-share">
+                <div class="body-share">
+                    <a class="box-icon-share">
+                        <img src="../../img/share/report.svg" alt="">
+                        <span>
+                            Report
+                        </span>
+                    </a>
+                    <a class="box-icon-share">
+                        <img src="../../img/share/not_interest.svg" alt="">
+                        <span>
+                            WNot Interest
+                        </span>
+                    </a>
+                    <a class="box-icon-share">
+                        <img src="../../img/share/save.svg" alt="">
+                        <span>
+                            Save
+                        </span>
+                    </a>
+                    <div>
+                        dddddd
+                    </div>
+                </div>
+                <a class="cencel-share" onclick="popup_share()">
+                    Cencel
+                </a>
+            </div>
+        </div>
+        <div class="popup-kebab" id="popUpKebab">
+            <a href="">
+                Report
+            </a>
+            <a href="">
+                Hide Post
+            </a>
+            <a href="">
+                Unfolow
+            </a>
+            <a href="">
+                Mute
+            </a>
+        </div>
 
     </div>
 
@@ -372,7 +450,7 @@
         var show = document.getElementById('des-show');
         var more = document.getElementById('more');
 
-        function toggle(id) {
+        function toggle() {
             if (show.getAttribute('id') == 'des-show' && more.getAttribute('id') == 'more') {
                 show.setAttribute('id', 'des-show2');
                 more.setAttribute('id', 'more2');
@@ -380,8 +458,22 @@
         }
 
         function popup() {
+            const black = document.getElementById('black')
             const popup = document.getElementById('popUp')
             popup.classList.toggle('active');
+            black.classList.toggle('active');
+        }
+
+        function popup_share() {
+            const black = document.getElementById('black')
+            const popup_share = document.getElementById('popUpShare')
+            popup_share.classList.toggle('active');
+            black.classList.toggle('active');
+        }
+
+        function popup_kebab() {
+            const popup_kebab = document.getElementById('popUpKebab')
+            popup_kebab.classList.toggle('active');
         }
     </script>
 </body>
