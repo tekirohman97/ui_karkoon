@@ -18,7 +18,7 @@
         <div class="container-edit-profile">
             <!-- #TODO header -->
             <div class="header-edit-profile">
-                <a href="#">
+                <a>
                     <img src="../../img/backk.svg" alt="">
                 </a>
                 <h6 style="font-family: Nunito; font-weight: 700; font-size: 20px;">
@@ -29,12 +29,19 @@
                 </button>
             </div>
             <!-- #TODO BODY -->
-            <div class="content-edit-profile">
+            <div class=" content-edit-profile">
                 <div class="box-foto-profile">
-                    <div class="foto-profilee">
-                        <img src="https://cdn0-production-images-kly.akamaized.net/bErwHxje08NtUVDOn8BOQv9VwZg=/383x288/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2930176/original/074123100_1570167676-GITA1.jpg"
-                            alt="">
-                    </div>
+                    <a class="foto-profilee" href="#big-preview">
+                        <img id="chosen-file" class="chosen-file" src="" alt="">
+                        <input type="file" id="upload-button" accept="image/*">
+                        <label for="upload-button">
+                            <img src="../../img/Upload_button.svg" alt="">
+                        </label>
+                    </a>
+                </div>
+                <div class="big-preview" id="big-preview">
+                    <a href="#" class="close">x close</a>
+                    <img src="" alt="" id="preview2">
                 </div>
                 <div class="box-data">
                     <div class="data-name">
@@ -64,12 +71,73 @@
                     </div>
                 </div>
             </div>
+            <div class="black-container" id="black">
+            </div>
+            <div class="popup-chose-foto" id="popUpChose">
+                <div class="header-popup-chose">
+                    <span>
+                        Profile Foto
+                    </span>
+                    <a onclick="popup_chose() ">
+                        <img src="../../img/exitt.svg" alt="">
+                    </a>
+                </div>
+                <div class="body-popup-chose">
+                    <div class="box-chose">
+                        <img src="../../img/tong_sampah_merah.svg" alt="">
+                        <span>
+                            Remove photo
+                        </span>
+                    </div>
+                    <div class="box-chose">
+                        <img src="../../img/galery.svg" alt="">
+                        <span>
+                            Galery
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <script>
+        const inpFile = document.getElementById('upload-button');
+        const preimage = document.getElementById('chosen-file')
+        const preimage2 = document.getElementById('preview2')
+
+        inpFile.addEventListener("change", function () {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+
+                reader.addEventListener("load", function () {
+                    console.log(this);
+                    preimage.setAttribute("src", this.result);
+                    preimage2.setAttribute("src", this.result);
+                });
+
+                reader.readAsDataURL(file);
+            } else {
+                preimage.style.display = null;
+                preimage.setAttribute("src", "");
+                preimage2.setAttribute("src", "");
+            }
+        });
+
+
+        function popup_chose() {
+            const black = document.getElementById('black')
+            const popup_chose = document.getElementById('popUpChose')
+            popup_chose.classList.toggle('active');
+            black.classList.toggle('active');
+        }
     </script>
 </body>
 
