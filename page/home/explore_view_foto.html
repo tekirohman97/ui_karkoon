@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container-3">
+    <div class="container-3" id="con">
         <!-- #TODO header -->
         <div class="header-3">
             <a class="back" href="#">
@@ -234,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-bar-comment">
+        <div class="bottom-bar-comment" id="btm-bar">
             <a class="share-left" href="">
                 <img src="..\..\img\love.svg" alt="">
                 <p>
@@ -253,17 +253,54 @@
                     67
                 </p>
             </a>
-            <div class="write">
-                <a class="w" href="">
+            <div class="write" id="write">
+                <a class="w">
                     <img src="../../img/write.svg" alt="">
                 </a>
             </div>
         </div>
+
+        <!-- comment active -->
+
+        <div class="bottom-bar-comment-write" id="write-a" style="display: none;">
+            <form class="comment-input-write" action="">
+                <div class="input-comment-write">
+                    <input type="text" placeholder="Write a message..." id="input-com">
+                    <img src="../../img/ad.svg" alt="">
+                    <img src="../../img/emot.svg" alt="">
+                </div>
+                <button class="btn-post" style="height: 40px; display: none; " id="btn-post">
+                    Post
+                </button>
+            </form>
+        </div>
+
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script>
+        let write = document.getElementById('write')
+        let write_a = document.getElementById('write-a')
+        let btm_bar = document.getElementById('btm-bar')
+        let con = document.getElementById('con')
+        let inp = document.getElementById('input-com')
+        let btn = document.getElementById('btn-post')
+
+
+        write.onclick = function () {
+            write_a.style.display = "block"
+            btm_bar.style.display = "none"
+        }
+        inp.oninput = function () {
+            btn.style.display = "block"
+
+            if (inp.value == "") {
+                btn.style.display = "none"
+            }
+        }
     </script>
 </body>
 
