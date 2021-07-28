@@ -46,6 +46,25 @@ body {
     font-size: 16px;
 }
 
+.box-notif {
+    position: relative;
+}
+
+.notif {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    clip-path: circle();
+    color: white;
+    text-align: center;
+    background: #B92835;
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+}
+
 .not-active {
     color: #9F9F9F;
 }
@@ -133,6 +152,8 @@ body {
 .navigasi {
     place-self: center end;
 }
+
+
 
 /* #TODO 1. Deskripsi */
 
