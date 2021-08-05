@@ -41,6 +41,10 @@ body {
     margin-top: 5px;
 }
 
+.header-chat .new {
+    margin-left: 0px;
+}
+
 .back-header {
     margin-left: 20px;
 }
@@ -94,6 +98,33 @@ body {
     min-height: 100vh;
 }
 
+/* empty chat */
+.body-chat-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 166px;
+    padding-inline: 20px;
+    text-align: center;
+}
+
+.body-chat-empty h6 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 38px;
+}
+
+.body-chat-empty p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* ----------- */
 
 .contact {
     background: white;
