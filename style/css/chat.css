@@ -98,6 +98,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 /* empty chat */
 .body-chat-empty {
     display: flex;
@@ -272,14 +274,16 @@ body {
     margin: 0;
     list-style-type: none;
     overflow-y: scroll;
+    height: auto;
 }
+
 
 #chat::-webkit-scrollbar {
     display: none;
 }
 
 #chat li {
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 #chat h2,
@@ -299,7 +303,7 @@ body {
 
 #chat .message {
     word-wrap: break-word;
-    padding: 10px 10px 0px 10px;
+    padding: 5px 10px 0px 10px;
     max-width: 90%;
     display: inline-block;
     line-height: 20px;
@@ -333,6 +337,7 @@ body {
     width: 600px;
     position: fixed;
     bottom: 0;
+    background: white;
 }
 
 

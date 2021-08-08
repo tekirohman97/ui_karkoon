@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 600px;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+}
+
+/* #TODO 1. shope*/
+.con-shope {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(233, 233, 233);
+    padding: 0px;
+}
+
+/* Header Page Shope */
+
+.head-shop {
+    height: 60px;
+    width: 600px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 6px 10px;
+}
+
+
+@media (max-width: 620px) {
+    .head-shop {
+        width: 100%;
+    }
+}
+
+.head-shop a {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.search-shop {
+    flex-basis: 90%;
+    display: flex;
+    background: #F5F5F5;
+    border-radius: 13px;
+    height: 44px;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-shop img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.search-shop input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.item-notif {
+    position: relative;
+}
+
+.notif {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    clip-path: circle();
+    color: white;
+    text-align: center;
+    background: #B92835;
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+}
+
+.p-notif {
+    top: 5px;
+    right: 14px;
+}
+
+/* ------------------------------------------- */
+
+
+/* Body SHop -------------------------------------*/
+
+.cat-scroll {
+    display: flex;
+    padding: 16px 10px;
+    gap: 25px;
+    overflow-x: auto;
+    width: 100%;
+    background: white;
+    margin-bottom: 5px;
+}
+
+.cat-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-item {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 48px;
+    text-decoration: none;
+    color: #0A0A0A;
+}
+
+.body-shop {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    overflow-x: hidden;
+}
+
+.content-prod {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 0px 5px;
+    grid-row-gap: 10px;
+}
+
+.content-item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #0A0A0A;
+    box-sizing: border-box;
+    margin: 0px 5px;
+}
+
+.content-item:hover {
+    color: #0A0A0A;
+}
+
+.content-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 210px;
+}
+
+.content-item-des {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item-des span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.content-item-des .harga {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    color: #B92835;
+}
+
+.dis {
+    display: flex;
+    gap: 5px;
+    row-gap: 0;
+    flex-wrap: wrap;
+
+
+}
+
+.dis p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #9E9E9E;
+}
+
+.dis span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0A0A0A;
+    text-decoration: none;
+    line-height: 0.5;
+}
+
+/* ------------------------------------------------- */
+
+/* Buttom Bar ----------------------------------------*/
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+.nav__link span {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 14px;
+    color: #C2C2C2;
+}
+
+
+/* ----------------------------------------------- */
