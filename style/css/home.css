@@ -120,13 +120,22 @@ body {
 
 .foto-profile {
     place-self: center;
+    height: 35px;
+    width: 35px;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: center;
+    clip-path: circle();
+    overflow: hidden;
+    break-inside: avoid;
 
 
 }
 
 .foto-profile img {
-    width: 35px;
-    clip-path: circle();
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .nama-profile {

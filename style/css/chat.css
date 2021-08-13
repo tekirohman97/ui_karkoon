@@ -392,3 +392,61 @@ body {
     flex-flow: 0;
     flex-shrink: 0;
 }
+
+
+/* #TODO POP Up Chose a variant */
+
+#popUp-variant {
+    position: fixed;
+    background-color: rgb(223, 223, 223);
+    width: 600px;
+    height: 566px;
+    bottom: -110%;
+    border-radius: 20px 20px 0px 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 460px 70px;
+    gap: 2px;
+    transition: 1s;
+
+}
+
+#popUp-variant.active {
+    visibility: visible;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    #popUp-variant {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    #popUp-variant {
+        width: 100%;
+    }
+}
+
+.header-popup-variant {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.header-popup-variant p {
+    width: 100%;
+    padding-left: 38%;
+    padding-top: 10px;
+}
+
+.header-popup-variant img {
+    width: 20px;
+    margin-right: 25px;
+}
+
+
+/* ------------------------------ */

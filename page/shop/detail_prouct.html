@@ -43,13 +43,13 @@
                 <img src="../../img/love.svg" alt="">
             </a>
         </div>
-        <a class="chose-variant" href="">
+        <a class="chose-variant">
             <span>Chose a Variant</span>
             <div>
                 <img src="../../img/next.svg" alt="">
             </div>
         </a>
-        <a class="shipping-btn" href="">
+        <a class="shipping-btn">
             <span>Shipping</span>
             <span>Delivery from: Jakarta Barat</span>
             <div>
@@ -190,6 +190,165 @@
                 </div>
             </div>
         </div>
+        <div class="black-container" id="black">
+        </div>
+        <form class="variant-popup" id="popUp-variant">
+            <div class="header-popup-variant">
+                <p>
+                    Choose a Variant:
+                </p>
+                <a id="exit">
+                    <img src="../../img/exitt.svg" alt="">
+                </a>
+            </div>
+            <div class="body-popup-variant">
+                <span>Pilih Warna</span>
+                <div class="img-variant">
+                    <label class="box-img-variant">
+                        <input type="radio" name="radio-img" />
+                        <div class="img-radio">
+                            <img src="https://media.serbada.com/product/img/375x375/2020/04/23/35276-gamis-kurta-modern-premium-baju-koko-pakistan-middle-brown-kombi-navy-m.jpg"
+                                alt="">
+                        </div>
+                    </label>
+                    <label class="box-img-variant">
+                        <input type="radio" name="radio-img" />
+                        <div class="img-radio">
+                            <img src="https://media.serbada.com/product/img/375x375/2020/04/23/35276-gamis-kurta-modern-premium-baju-koko-pakistan-middle-brown-kombi-navy-m.jpg"
+                                alt="">
+                        </div>
+                    </label>
+                    <label class="box-img-variant">
+                        <input type="radio" name="radio-img" />
+                        <div class="img-radio">
+                            <img src="https://media.serbada.com/product/img/375x375/2020/04/23/35276-gamis-kurta-modern-premium-baju-koko-pakistan-middle-brown-kombi-navy-m.jpg"
+                                alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="line">
+                </div>
+                <div class="ukuran-variant">
+                    Pilih Ukuran
+                </div>
+                <div class="radio-buttons">
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <span class="radio-btn">
+                            <span>S</span>
+                        </span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <span class="radio-btn">
+                            <span>M</span>
+                        </span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <span class="radio-btn">
+                            <span>L</span>
+                        </span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="radio" />
+                        <span class="radio-btn">
+                            <span>XL</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="line">
+                </div>
+                <div class="quantity">
+                    <span>
+                        Quantity
+                    </span>
+                    <div id="button__wrapper">
+                        <button id="button__decrease" type="button"> -</button>
+                        <input type="number" value="1">
+                        <button id="button__increase" type="button">+</button>
+                    </div>
+                </div>
+                <div class="button_next">
+                    <button class="btn_next">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="variant-popup" id="popUp-shipping">
+            <div class="header-popup-variant h-shipping">
+                <p>
+                    Shipping
+                </p>
+                <a id="exit2">
+                    <img src="../../img/exitt.svg" alt="">
+                </a>
+            </div>
+            <div class="body-popup-variant shipping">
+                <a class="add-shipping">
+                    <span>+</span> <span>Add new address</span>
+                </a>
+                <div class="button_next ">
+                    <button class="btn_next btn-shipping">
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form class="variant-popup" id="popUp-add-shipping">
+            <div class="header-popup-variant h-shipping">
+                <p>
+                    Shipping
+                </p>
+                <a id="exit3">
+                    <img src="../../img/exitt.svg" alt="">
+                </a>
+            </div>
+            <div class="body-popup-variant shipping">
+                <div class="box-input-s">
+                    <h1>
+                        Save as (Ex: house, apartment, office, etc.)
+                    </h1>
+                    <input type="text" placeholder="House">
+                </div>
+                <div class="box-input-s">
+                    <h1>
+                        Contact name
+                    </h1>
+                    <input type="text" placeholder="Jhon Doe">
+                </div>
+                <div class="box-input-s">
+                    <h1>
+                        Phone Number
+                    </h1>
+                    <input type="number" placeholder="enter phone number">
+                </div>
+                <div class="box-input-s">
+                    <h1>
+                        Address (street address, P. O. box, etc.)
+                    </h1>
+                    <input type="text" placeholder="Sesame street">
+                </div>
+                <div class="box-input-s">
+                    <h1>
+                        State / Province / Country
+                    </h1>
+                    <input type="text" placeholder="DKI Jakarta / Jakarta Pusat / Indonesia">
+                </div>
+                <div class="box-input-s">
+                    <h1>
+                        Zip / Postal code
+                    </h1>
+                    <input type="number" placeholder="12345">
+                </div>
+                <div class="button_next add-s">
+                    <button class="btn_next btn-shipping add">
+                        Save Changes
+                    </button>
+                </div>
+            </div>
+        </form>
         <div class="btm-bar-detail-product">
             <a href="">
                 <img src="../../img/chat_shope.svg" alt="">
@@ -202,6 +361,8 @@
             </a>
         </div>
     </div>
+
+    <script src="../../style/js/shop.js"></script>
 </body>
 
 </html>
