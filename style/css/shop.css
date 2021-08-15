@@ -40,6 +40,23 @@ body {
     }
 }
 
+.head-shop span {
+    justify-self: center;
+    text-align: center;
+    flex-basis: 80%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A0A0A;
+}
+
+.back-os {
+    padding: 10px;
+}
+
+.order-summary {
+    box-shadow: 5px 10px 8px #888888;
+}
+
 .head-shop a {
     width: 48px;
     height: 48px;
@@ -686,7 +703,7 @@ body {
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
     #popUp-variant {
         width: 100%;
     }
@@ -1054,3 +1071,340 @@ body {
 }
 
 /* --------------------- */
+
+/* #TODO Order Summary */
+
+.odr-summ {
+    display: flex;
+    flex-direction: column;
+    margin-top: 67px;
+
+}
+
+.alamat-odr {
+    text-decoration: none;
+    color: #0A0A0A;
+    background: white;
+    padding: 12px 20px;
+    display: flex;
+}
+
+.alamat-odr img {
+    width: 50px;
+    margin-right: 11px;
+}
+
+.alamat-odr span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #616161;
+}
+
+.garis-mail {
+    display: flex;
+    justify-content: center;
+}
+
+.prof-brandd {
+    padding: 15px 20px;
+    background: white;
+    display: flex;
+    text-decoration: none;
+    color: #616161;
+}
+
+.ft-prof {
+    width: 24px;
+}
+
+.prof-brandd span {
+    margin-left: 20px;
+}
+
+.box-odr-prod {
+    padding: 10px 20px;
+    background: white;
+    display: flex;
+    position: relative;
+}
+
+.foto-odr-prod {
+    width: 81px;
+    height: 81px;
+    overflow: hidden;
+    flex-basis: 81px;
+    flex-flow: 0;
+    flex-shrink: 0;
+
+}
+
+.foto-odr-prod img {
+    width: 100%;
+}
+
+.ket-prod-odr {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.ket-prod-odr span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.ket-prod-odr span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+}
+
+.qty-odr {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+
+.ket-shipping {
+    display: flex;
+    padding: 20px 20px;
+    background: white;
+    justify-content: space-between;
+
+}
+
+.ket-shipping span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.ket-shipping span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #616161;
+    margin-bottom: 10px;
+}
+
+.add-mesage {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.l-odr {
+    width: 90%;
+    height: 0px;
+    border: 1px solid #F8F5F5;
+    background: white;
+    margin-top: -3px;
+    margin-left: 20px;
+
+}
+
+.add-mesage span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+    margin-bottom: 20px;
+}
+
+.box-bank {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.rd-bnk input {
+    display: none;
+}
+
+.rd-bnk {
+    display: flex;
+}
+
+.rd-bnk .circle {
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: border-color .5s ease;
+    position: relative;
+}
+
+.rd-bnk .circle::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #B92835;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: transform .5s ease;
+    transform: scale(0);
+}
+
+
+.rd-bnk input:checked+.circle {
+    border-color: #8a8a8a;
+}
+
+.rd-bnk input:checked+.circle::before {
+    transform: scale(1);
+}
+
+.nm-bank {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+    flex-flow: 0;
+    flex-shrink: 0;
+}
+
+.ket-bank {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #C2C2C2;
+    flex-basis: 60%;
+}
+
+.total-odr {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+}
+
+.jud {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+    margin-bottom: 20px;
+}
+
+.total-odr-detail {
+    display: flex;
+    margin-bottom: 14px;
+    justify-content: space-between;
+}
+
+.total-odr-detail span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.total-odr-detail span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    color: #0A0A0A;
+}
+
+.btm-bar-odr {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    padding: 15px 20px;
+}
+
+
+@media (max-width: 767px) {
+    .btm-bar-odr {
+        width: 540px;
+    }
+}
+
+@media (max-width: 600px) {
+    .btm-bar-odr {
+        width: 100%;
+    }
+}
+
+.all-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.all-total span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.all-total span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: right;
+    color: #B92835;
+}
+
+.place-odr {
+    margin-top: 0px;
+
+}
+
+/* ------------------------ */
