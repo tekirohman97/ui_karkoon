@@ -904,7 +904,7 @@ body {
 }
 
 #black {
-    background: rgb(0, 0, 0, 0.3);
+    background: rgb(0, 0, 0, 0.5);
     height: 100vh;
     width: 100%;
     position: fixed;

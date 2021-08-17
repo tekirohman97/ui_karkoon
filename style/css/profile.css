@@ -835,6 +835,7 @@ body {
     margin: 10px 0px;
     padding: 0 12.5px;
     align-items: center;
+    text-decoration: none;
 
 }
 
@@ -880,6 +881,8 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 15px;
+    border: none;
+    background: transparent;
 }
 
 #folowing {
