@@ -53,8 +53,10 @@ body {
     padding: 10px;
 }
 
+
+
 .order-summary {
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 0px 5px 8px #f2f2f2;
 }
 
 .head-shop a {
@@ -652,7 +654,7 @@ body {
     padding-inline: 15px;
 }
 
-.btm-bar-detail-product a:nth-child(3) {
+.btm-bar-detail-product button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -664,6 +666,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     color: white;
+    border: none;
 }
 
 @media (max-width: 620px) {
@@ -1408,3 +1411,250 @@ body {
 }
 
 /* ------------------------ */
+
+/* #TODO add message */
+
+.ctn-add-message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 67px;
+    background: white;
+    padding: 20px;
+}
+
+.input-add-msg {
+    border: 1px solid #F8F5F5;
+    border-radius: 4px;
+    outline: none;
+    padding: 15px 13px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+    margin-bottom: 24px;
+}
+
+.input-add-msg::placeholder {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #C2C2C2;
+}
+
+.sumit-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sumit-txt span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.btn-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    background: #B92835;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+
+/* ------------------------- */
+
+/* #TODO order placed */
+
+.odr-placed {
+    margin-top: 0px;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.exit-odr-plc {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+
+.ctn-odr-plc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ctn-odr-plc img {
+    width: 145px;
+    height: 145px;
+    margin-bottom: 47px;
+}
+
+
+.ctn-odr-plc span {
+    text-align: center;
+}
+
+.ctn-odr-plc span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #0EA353;
+    margin-bottom: 25px;
+}
+
+.ctn-odr-plc span:nth-child(3) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #0A0A0A;
+    margin-bottom: 10px;
+}
+
+.ctn-odr-plc span:nth-child(4) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #0A0A0A;
+}
+
+
+.btn-odr {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 90%;
+    padding: 15px 20px;
+}
+
+/* ------------------- */
+
+/* #TODO Wishlist page */
+
+.ctn-wishlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-wishlist {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 67px; */
+    background: white;
+    padding: 20px;
+}
+
+.img-n-t {
+    display: flex;
+    text-decoration: none;
+    color: #0A0A0A;
+}
+
+.img-w {
+    width: 81px;
+    height: 81px;
+    overflow: hidden;
+}
+
+.title-w {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-w span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.title-w span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+
+}
+
+.hgr-n-qty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hgr-n-qty span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.hgr-n-qty span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    color: #757575;
+}
+
+.fot-box-w {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+    align-items: center;
+}
+
+.fot-box-w a {
+    text-decoration: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #616161;
+}
+
+.fot-box-w button {
+    border: none;
+    background: transparent;
+}
+
+/* -------------------- */
+
+/* #TODO Cart Page */
+
+
+
+
+/* ---------------- */
