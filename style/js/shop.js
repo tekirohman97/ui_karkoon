@@ -45,21 +45,6 @@ exit2.onclick = function () {
 }
 
 
-btn_as.onclick = function () {
-    const black = document.getElementById('black')
-    const popupas = document.getElementById('popUp-add-shipping')
-    popupas.classList.toggle('active');
-    black.classList.toggle('active');
-}
-
-exit3.onclick = function () {
-    const black = document.getElementById('black')
-    const popupas = document.getElementById('popUp-add-shipping')
-    popupas.classList.toggle('active');
-    black.classList.toggle('active');
-}
-
-
 
 addBtn.addEventListener('click', () => {
     qty.value = parseInt(qty.value) + 1;
