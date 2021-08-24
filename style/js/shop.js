@@ -10,6 +10,10 @@ let addBtn = document.getElementById('button__increase');
 let qty = document.querySelector('#button__wrapper input');
 
 
+const checkAll = document.getElementsByClassName('checkbox-all');
+const checkbrand = document.getElementsByClassName('checkbox-brand')
+
+
 btn_v.onclick = function () {
     const black = document.getElementById('black')
     const popup = document.getElementById('popUp-variant')

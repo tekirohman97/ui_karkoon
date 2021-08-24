@@ -26,12 +26,165 @@
                 <img src="../../img/love.svg" alt="">
             </a>
         </div>
-        <div class="body-shop ctn-wishlist">
-
-        </div>
+        <form class="body-shop ctn-wishlist">
+            <div class="con-slc-all">
+                <div class="group">
+                    <div class="check-box">
+                        <input type="checkbox" class="checkbox-all" />
+                        <div class="chct"></div>
+                        <div class="chc"></div>
+                    </div>
+                    <span>Pilih Semua</span>
+                </div>
+            </div>
+            <div class="box-cart">
+                <div class="group">
+                    <div class="check-box">
+                        <input type="checkbox" class="checkbox-brand" />
+                        <div class="chct"></div>
+                        <div class="chc"></div>
+                    </div>
+                    <span class="nama-brand">
+                        <div class="img-brand ibc">
+                            <img src="https://cdn.kibrispdr.org/data/foto-foto-cewe-cantik-26.jpg" alt="">
+                        </div>
+                        <span>Nadia Happy - Female.com</span>
+                        <button>
+                            <img src="../../img/tong_sampah_hitam.svg" alt="">
+                        </button>
+                    </span>
+                </div>
+                <div class="group-p">
+                    <div class="check-box">
+                        <input type="checkbox" class="checkbox-product" />
+                        <div class="chct"></div>
+                        <div class="chc"></div>
+                    </div>
+                    <span>
+                        <a class="img-n-t">
+                            <div class="foto-odr-prod">
+                                <img src="https://i.pinimg.com/736x/5e/ea/3e/5eea3e81f0f44a6228289662dddf5228.jpg"
+                                    alt="">
+                            </div>
+                            <div class="title-w">
+                                <span>
+                                    Sweater Cardigan Korea Wanita Bahan Halus Lembut Tebal Pre...
+                                </span>
+                                <span>
+                                    Color: Blue, Size: L
+                                </span>
+                                <div class="hgr-n-qty">
+                                    <span>
+                                        Rp152.000
+                                    </span>
+                                    <!-- <span>
+                                        1x
+                                    </span> -->
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fot-box-w">
+                            <a href="" class="pindah-cart">
+                                Pindah ke Wishlist
+                            </a>
+                            <div id="button__wrapper">
+                                <button id="button__decrease" type="button"> -</button>
+                                <input type="number" value="1">
+                                <button id="button__increase" type="button">+</button>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="box-cart">
+                <div class="group">
+                    <div class="check-box">
+                        <input type="checkbox" class="checkbox-brand" />
+                        <div class="chct"></div>
+                        <div class="chc"></div>
+                    </div>
+                    <span class="nama-brand">
+                        <div class="img-brand ibc">
+                            <img src="https://cdn.kibrispdr.org/data/foto-foto-cewe-cantik-26.jpg" alt="">
+                        </div>
+                        <span>Nadia Happy - Female.com</span>
+                        <button>
+                            <img src="../../img/tong_sampah_hitam.svg" alt="">
+                        </button>
+                    </span>
+                </div>
+                <div class="group-p">
+                    <div class="check-box">
+                        <input type="checkbox" class="checkbox-product" />
+                        <div class="chct"></div>
+                        <div class="chc"></div>
+                    </div>
+                    <span>
+                        <a class="img-n-t">
+                            <div class="foto-odr-prod">
+                                <img src="https://i.pinimg.com/736x/5e/ea/3e/5eea3e81f0f44a6228289662dddf5228.jpg"
+                                    alt="">
+                            </div>
+                            <div class="title-w">
+                                <span>
+                                    Sweater Cardigan Korea Wanita Bahan Halus Lembut Tebal Pre...
+                                </span>
+                                <span>
+                                    Color: Blue, Size: L
+                                </span>
+                                <div class="hgr-n-qty">
+                                    <span>
+                                        Rp152.000
+                                    </span>
+                                    <!-- <span>
+                                        1x
+                                    </span> -->
+                                </div>
+                            </div>
+                        </a>
+                        <div class="fot-box-w">
+                            <a href="" class="pindah-cart">
+                                Pindah ke Wishlist
+                            </a>
+                            <div id="button__wrapper">
+                                <button id="button__decrease" type="button"> -</button>
+                                <input type="number" value="1">
+                                <button id="button__increase" type="button">+</button>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </form>
     </div>
-    <script></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.checkbox-all').click(function () {
+                $('.checkbox-brand').prop('checked', $(this).prop('checked'));
+            });
+            $('.checkbox-brand').click(function (e) {
+                $('.checkbox-product').prop('checked', $(this).prop('checked'));
+            });
 
+
+
+            // $(document).on('click', '.group', function (e) {
+            //     $(this).next('.group-p').fadeToggle();
+            //     e.stopPropagation();
+            // });
+
+            // $(document).on('change', '.group input[type=checkbox]', function (e) {
+            //     $(this).siblings('.group-p').find(".check-product").prop('checked', this
+            //         .checked);
+            //     $(this).parentsUntil('.group').children("check-brand").prop('checked',
+            //         this.checked);
+            //     e.stopPropagation();
+            // });
+
+        })
+    </script>
 </body>
 
 </html>
