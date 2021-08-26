@@ -47,6 +47,16 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-shop span b {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #757575;
 }
 
 .back-os {
@@ -2308,3 +2318,188 @@ body {
 }
 
 /* ------------------------------------ */
+
+
+/* #TODO Page Order Details  */
+
+.ctn-del {
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.ctn-del span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+
+}
+
+.no-res {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.no-res span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.no-res button {
+    background: transparent;
+    border: none;
+}
+
+.cek-del {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cek-p {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 50px;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    height: 50px;
+}
+
+.cek-p img {
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    z-index: 2;
+}
+
+.titik {
+    position: absolute;
+    left: 14px;
+    top: 40px;
+    z-index: 1;
+}
+
+.titik2 {
+    position: absolute;
+    left: 14px;
+    top: 110px;
+    z-index: 1;
+}
+
+.titik3 {
+    position: absolute;
+    left: 14px;
+    top: 190px;
+    z-index: 1;
+}
+
+.sta-del {
+    display: flex;
+    flex-direction: column;
+}
+
+.sta-del span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+}
+
+.sta-del span:nth-child(2) {
+    color: #404040;
+}
+
+.tgl-del {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #757575;
+    flex-basis: 40px;
+    flex-flow: 0;
+    flex-shrink: 0;
+}
+
+.del-addres {
+    background: white;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.addres {
+    display: flex;
+    flex-direction: column;
+}
+
+.addres span {
+    margin-bottom: 5px;
+}
+
+.addres span:nth-child(1) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0A0A0A;
+
+}
+
+.addres span:nth-child(2) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #404040;
+
+}
+
+.addres span:nth-child(3) {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+    letter-spacing: 0.5px;
+}
+
+.brand-prod {
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.od-b {
+    margin-bottom: 20px;
+}
+
+
+.fot-od {
+    padding: 20px;
+}
+
+/*-------------------*/

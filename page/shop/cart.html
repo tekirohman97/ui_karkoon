@@ -170,15 +170,25 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+        // function handler(event) {
+        //     var target = $(event.target);
+        //     if (target.is(".checkbox-brand")) {
+        //         target.children('.chechbox-product').prop('checked', $(this).prop('checked'));
+        //     }
+        // }
+
+
         $(document).ready(function () {
             $('.checkbox-all').click(function () {
                 $('.checkbox-brand').prop('checked', $(this).prop('checked'));
             });
             $('.checkbox-brand').click(function (e) {
                 $('.checkbox-product').prop('checked', $(this).prop('checked'));
+
             });
 
 
+            // $("ul").click(handler).find("ul").hide();
 
             // $(document).on('click', '.group', function (e) {
             //     $(this).next('.group-p').fadeToggle();
@@ -195,6 +205,7 @@
 
         })
     </script>
+    <!-- <script src="../../style/js/shop.js"> </script> -->
 </body>
 
 </html>

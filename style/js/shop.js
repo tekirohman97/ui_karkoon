@@ -50,6 +50,7 @@ exit2.onclick = function () {
 
 
 
+
 addBtn.addEventListener('click', () => {
     qty.value = parseInt(qty.value) + 1;
 });
