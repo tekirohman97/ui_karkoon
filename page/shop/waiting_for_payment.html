@@ -133,10 +133,19 @@
             <div class="form-btn-upload">
                 <span>
                     Format gambar: JPG, JPEG, PNG, Max 10 Mb
+                    <!-- dan span ini hilang jika succes opload (bikin aja display none)-->>
                 </span>
-                <button class="btn-chose-img">
+                <input type="file" id="file-img" accept="image/*">
+                <label for="file-img" class="btn-chose-img">
                     Choose Image
-                </button>
+                </label>
+
+                <!-- <div class="btn-chose-img uploaded">
+                    <img src="../../img/img_uploaded_blue.svg" alt=""> Image Uploaded
+                </div>
+                <div class="ccs_opl">
+                    *Image successfully uploaded!
+                </div> -->
                 <button class="btn-continue">
                     Continue
                 </button>

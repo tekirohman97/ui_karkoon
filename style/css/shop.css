@@ -1939,6 +1939,10 @@ body {
     padding: 20px;
 }
 
+.form-btn-upload input {
+    display: none;
+}
+
 .form-btn-upload span {
     font-family: Nunito;
     font-style: normal;
@@ -1949,6 +1953,7 @@ body {
     color: #757575;
     margin-bottom: 20px;
 }
+
 
 .btn-chose-img {
     display: flex;
@@ -1968,6 +1973,13 @@ body {
     border: 1px solid #B92835;
     box-sizing: border-box;
     border-radius: 10px;
+    color: #B92835;
+    gap: 13px;
+}
+
+.uploaded {
+    border: 1px solid #0170BF;
+    color: #0170BF;
 }
 
 .btn-continue {
@@ -1986,6 +1998,21 @@ body {
     border: none;
     margin-top: 10px;
     color: white;
+}
+
+.ccs_opl {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Info/50 */
+
+    color: #0170BF;
 }
 
 /* -------------------------------- */
