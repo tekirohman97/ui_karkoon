@@ -31,6 +31,7 @@ body {
     background: white;
     align-items: center;
     padding: 6px 10px;
+    z-index: 3;
 }
 
 
@@ -155,7 +156,7 @@ body {
 }
 
 .body-shop {
-    margin-top: 60px;
+    margin-top: 62px;
     height: calc(100vh - 60px);
     overflow-x: hidden;
 }
@@ -1704,7 +1705,7 @@ body {
 .waiting-for-payment {
     display: flex;
     flex-direction: column;
-    margin-top: 67px;
+    margin-top: 62px;
     height: auto;
 }
 
@@ -2383,14 +2384,14 @@ body {
     position: absolute;
     left: -10px;
     top: -8px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .titik {
     position: absolute;
     left: 14px;
     top: 40px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .titik2 {
@@ -2503,3 +2504,116 @@ body {
 }
 
 /*-------------------*/
+
+
+/* #TODO Notif Shop */
+
+
+.notif-shop {
+    flex-direction: column;
+    align-content: space-between;
+    height: 120px;
+    padding: 0;
+}
+
+.b-notif {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    height: auto;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+}
+
+.tab-notif {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-bar li {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    color: #0A0A0A;
+
+}
+
+.act {
+    border-bottom: 2px solid #B92835;
+    width: 100%;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #0A0A0A;
+}
+
+.ctn-shop-update {
+    display: flex;
+    flex-direction: column;
+}
+
+.ctn-order-history {
+    display: none;
+}
+
+.date-n {
+    padding: 20px 20px 10px 20px;
+}
+
+
+.n-white-box {
+    display: flex;
+    padding: 15px 14px;
+    gap: 20px;
+    text-decoration: none;
+    background: white;
+    color: #0A0A0A;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+.e-foto {
+    width: 41px;
+    height: 41px;
+    background: white;
+    border-radius: 50%;
+    flex-basis: 41px;
+    flex-flow: 0;
+    flex-shrink: 0;
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.e-foto img {
+    clip-path: circle();
+    width: 30px;
+}
+
+/* ----------------- */
