@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="undefined" crossorigin="anonymous">
+    <title>Oder Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="../../style/css/shop.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <form class="con-shope ">
+        <div class="head-shop order-summary">
+            <a href="" class="back-os">
+                <img src="../../img/exitt.svg" alt="">
+            </a>
+            <span>
+                Review and Rating
+            </span>
+
+        </div>
+        <div class="body-shop waiting-for-payment">
+            <form class="con-rat">
+                <div class="card four">
+                    <div class="card-body">
+                        <div class="stars">
+                            <i class="fas fa-star" id="one"></i>
+                            <i class="fas fa-star" id="two"></i>
+                            <i class="fas fa-star" id="three"></i>
+                            <i class="fas fa-star" id="four"></i>
+                            <i class="fas fa-star" id="five"></i>
+                        </div>
+                        <textarea rows="5" placeholder="Write your review"></textarea>
+                        <div class="fot-rat">
+                            <span>
+                                0/200
+                            </span>
+                            <button class="btn-continue b-rat">
+                                save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </form>
+    </div>
+    <script>
+        const stars = document.querySelectorAll('.stars i');
+        const card = document.querySelector('.card');
+
+        stars.forEach(function (star) {
+            star.addEventListener('mouseover', function () {
+                card.className = `card ${this.id}`
+            })
+        });
+    </script>
+
+</body>
+
+</html>
