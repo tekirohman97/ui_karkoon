@@ -1434,7 +1434,11 @@ body {
 
 .place-odr {
     margin-top: 0px;
+    text-decoration: none;
+}
 
+.place-odr:active {
+    color: white;
 }
 
 /* ------------------------ */
@@ -2532,6 +2536,7 @@ body {
 
 .fot-od {
     padding: 20px;
+    text-decoration: none;
 }
 
 /*-------------------*/
