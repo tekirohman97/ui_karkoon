@@ -26,6 +26,7 @@ body {
 
 .tabs {
     width: 100%;
+    background: rgb(233, 233, 233);
 
 }
 
@@ -92,6 +93,7 @@ body {
     left: 0%;
     opacity: 1;
     transform: scale(1);
+
 }
 
 #post {
@@ -101,6 +103,7 @@ body {
     margin: 0px 10px;
     gap: 10px;
     position: relative;
+
 
 }
 

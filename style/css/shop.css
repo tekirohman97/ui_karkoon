@@ -883,6 +883,40 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.box-pil-al input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rad {
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+
+    width: auto;
+    height: 24px;
+    left: 174px;
+    top: 2px;
+
+    /* Neutral/30 */
+
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #B92835;
+}
+
+.box-pil-al input:checked+.rad {
+    display: block;
 }
 
 .top-al {
@@ -932,6 +966,8 @@ body {
 
     color: #B92835;
 }
+
+
 
 .mid-al {
     display: flex;
@@ -1135,6 +1171,12 @@ body {
     background: #C2C2C2;
     color: white;
     margin-top: 328px;
+}
+
+.btn-ship {
+    background: #C2C2C2;
+    color: white;
+    margin-top: 30px;
 }
 
 .h-shipping p {
